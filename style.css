@@ -1,0 +1,177 @@
+* {
+
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', 'cursive';
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /*border: 5px solid black;*/
+    color: #6B949E;
+}
+header {
+    background-color: #012B35 ;
+    display: flex;
+    width: 100%;
+    /*height: 20vh;*/
+    /*position: fixed;
+    left: 0;
+    top: 0;*/
+    flex-wrap: wrap;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    /*padding: 0;
+    margin: 0;*/
+    align-items: center;
+}
+#logo {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#menu {
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: #6B949E;
+}
+#menu li {
+    font-size: 15px;
+    padding: 10px;
+    color: #6B949E;
+}
+#social li {
+    padding: 10px;
+    color: #6B949E;
+}
+#search {
+    text-align: center;
+}
+#main {
+    display: flex;
+}
+#sidebar {
+    width: 100%;
+}
+#sidebar span h4 {
+    text-align: center;
+    font-size: 30px;
+
+}
+select {
+    margin-left: 29%;
+    padding: 2px;
+}
+#content {
+    display: flex;
+    justify-content: center;
+    
+}
+#food1, #food2, #food3, #food4 {
+    margin: 20px;
+}
+.food {
+    border: 2px solid #012B35;
+    box-shadow: 5px 10px 10px #012B35;
+    flex-basis: 35%;
+    padding: 32px;
+    cursor: pointer;  
+    
+}
+.food img {
+    width: 200px;
+}
+footer {
+    text-align: center;
+    color: #6B949E;
+    background-color: #012B35;
+}
+@media screen and (max-width: 1496px) {
+    #sidebar {
+        flex-direction: column;
+
+    }
+    select {
+        margin-left: 25%;
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    select {
+        margin-left: 18%;
+        padding: 0px 30px;
+    }
+
+}
+@media screen and (max-width: 1104px) {
+    #sidebar {
+        flex-direction: column;
+
+    }
+    
+    select {
+        margin-left: 10%;
+        padding: 0px 10px;
+    }
+    .food {
+        flex-basis: 90%;
+        padding: 120px;
+    }
+    .food img {
+        width: 500px;
+    }
+
+}
+@media screen and (max-width: 912px) {
+    #main {
+        flex-direction: column;
+    }
+    select {
+        margin-left: 22%;
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 760px) {
+    .food {
+        
+        flex-basis: 35%;
+        padding: 32px;
+    }
+    .food img {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 496px) {
+    
+    #menu ul li {
+        font-size: 10px;
+    }
+    .food { 
+        flex-basis: 20%;
+        padding: 10px;
+    }
+    .food img {
+        width: 150px;
+    }
+}
